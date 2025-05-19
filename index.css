@@ -1,0 +1,191 @@
+.logo{
+    text-align: center;
+}
+
+.arrownavbar{
+    display: inline-block;
+    transform: rotate(90deg);
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.itemnavbar{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.mamancercle img{
+    width: 40px;
+    height: 40px;
+}
+
+body{
+    color: white;
+    font-family: "DM Sans", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+  
+}
+.cercle{
+    height: 22.5px;
+    width: 18px;
+    background-color: #E58411;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    
+
+}
+
+.mamancercle{
+    display: flex;
+}
+
+.cercle{
+    margin-left: -1rem;
+}
+
+.title {
+    text-align: center;
+}
+
+.subtitle{
+    text-align: center;
+}
+
+.seachmaman input{
+    border-radius: 10px;
+    height: 2rem;
+    width: 15rem;
+    background-color: rgba(188, 188, 188, 0.5);
+    border: 1px solid #ffffff;
+    padding: 0 20px;
+    color: white ;
+    outline: none;
+
+
+}
+
+.seachmaman input::placeholder{
+   
+    color: white ;
+    outline: none;
+
+
+}
+
+.div3rond{
+    display: flex;
+    gap: 10px;
+    background-color: rgba(143, 143, 143, 0.5);
+    padding: 1rem;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    width: max-content;
+    justify-self: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.enfantdivrond{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 0px 4px white;
+
+}
+
+.un{
+background-color: red;
+}
+
+.deux{
+    background-color: blue;
+
+}
+
+.toggle{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    right: 20px;
+    top: 40px;
+}
+
+.trois{
+    background-color: yellow;
+
+}
+
+.rectangle{
+
+width: 30px;
+height: 3px;
+background-color: white;
+}
+
+
+.seachmaman{
+    align-items: center;
+    display: flex;justify-content: center;
+}
+
+.imgsearch{
+    margin-left: -2rem;
+    background-color: orange;
+padding: 4px;
+border-radius: 50%;
+}
+
+.section1{
+    background-image: url("./assets/images/header.png");
+    background-size: cover;       /* Remplit toute la section */
+    background-repeat: no-repeat; /* Empêche la répétition */
+    background-position: center;  /* Centre l'image */
+    height: 30rem;
+    
+}
+
+
+@media screen and (max-width:685px) {
+
+    .navbar{
+        flex-direction: column;
+        background-color: black;
+        height: 100vh;
+        position: fixed;
+        right: -300px;
+        width: 300px;
+        
+    }
+
+    .othman{
+        right: 0;
+        transition: 0.5s ease-in-out;
+    }
+
+    .itemnavbar{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width:800px) {
+
+    .toggle{
+        display: none;
+    }
+}
